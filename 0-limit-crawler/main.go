@@ -17,44 +17,32 @@ import (
 
 // Crawl uses `fetcher` from the `mockfetcher.go` file to imitate a
 // real crawler. It crawls until the maximum depth has reached.
-func Crawl(url string, depth int, wg *sync.WaitGroup, ch chan struct{}) {
+func Crawl(url string, depth int, wg *sync.WaitGroup, che <-chan time.Time) {
 	defer wg.Done()
-	var urls []string
+	fmt.Println("Started go routine in depth", depth)
 	if depth <= 0 {
 		return
 	}
-LOOP:
-	for {
-		select {
-		case <-ch:
-			body, urlsData, err := fetcher.Fetch(url)
-			time.Sleep(time.Second)
-			ch <- struct{}{}
-			if err != nil {
-				fmt.Println(err)
-				return
-			}
-			fmt.Printf("found: %s %q\n", url, body)
-			urls = urlsData
-			break LOOP
-		default:
-			time.Sleep(time.Second)
-		}
+	body, urls, err := fetcher.Fetch(url)
+	if err != nil {
+		fmt.Println(err)
+		return
 	}
+	fmt.Printf("found: %s %q\n", url, body)
 	wg.Add(len(urls))
 	for _, u := range urls {
 		// Do not remove the `go` keyword, as Crawl() must be
 		// called concurrently
-		go Crawl(u, depth-1, wg, ch)
+		<-che
+		go Crawl(u, depth-1, wg, che)
 	}
 	return
 }
 
 func main() {
 	var wg sync.WaitGroup
-	ch := make(chan struct{}, 1)
-	ch <- struct{}{}
+	throttle := time.Tick(time.Second)
 	wg.Add(1)
-	Crawl("http://golang.org/", 4, &wg, ch)
+	Crawl("http://golang.org/", 4, &wg, throttle)
 	wg.Wait()
 }
