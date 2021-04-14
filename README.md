@@ -1,11 +1,11 @@
-Прикольчики по гошке от Tleu13 [![Build Status](https://travis-ci.org/mindworker/go-concurrency-exercises.svg?branch=master)](https://travis-ci.org/mindworker/go-concurrency-exercises) [![Go Report Card](https://goreportcard.com/badge/github.com/mindworker/go-concurrency-exercises)](https://goreportcard.com/report/github.com/mindworker/go-concurrency-exercises)
-Exercises for Golang's concurrency patterns.
+Прикольчики по гошке от Tleu13 [![Build Status](https://travis-ci.org/mindworker/go-concurrency-exercises.svg?branch=master)](https://travis-ci.org/mindworker/go-concurrency-exercises) [![Go Report Card](https://goreportcard.com/badge/github.com/mindworker/go-concurrency-exercises)](https://goreportcard.com/report/github.com/mindworker/go-concurrency-exercises)  
+Exercises for Golang's кункаррренси patterns.
 
 ## Why
-Ну ниче так камкарренси и параллелизм тоже ничего.
+Ну ниче так камкарренси и параллелизм тоже ничего.  
 ![Image of excited gopher](https://golang.org/doc/gopher/pkg.png)
 
-## How to take this challenge
+## Шо це надо делать Саня  
 1. *Only edit `main.go`* to solve the problem. Do not touch any of the other files.
 2. If you find a `*_test.go` file, you can test the correctness of your solution with `go test`
 3. If you get stuck, join us on [Slack](https://gophersinvite.herokuapp.com/)! I'm sure there will be people who are happy to give you some code review (if not, find me via @beertocode ;) )
