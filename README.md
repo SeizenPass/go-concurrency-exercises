@@ -1,9 +1,8 @@
-# Go Concurrency Exercises [![Build Status](https://travis-ci.org/mindworker/go-concurrency-exercises.svg?branch=master)](https://travis-ci.org/mindworker/go-concurrency-exercises) [![Go Report Card](https://goreportcard.com/badge/github.com/mindworker/go-concurrency-exercises)](https://goreportcard.com/report/github.com/mindworker/go-concurrency-exercises)
+Прикольчики по гошке от Tleu13 [![Build Status](https://travis-ci.org/mindworker/go-concurrency-exercises.svg?branch=master)](https://travis-ci.org/mindworker/go-concurrency-exercises) [![Go Report Card](https://goreportcard.com/badge/github.com/mindworker/go-concurrency-exercises)](https://goreportcard.com/report/github.com/mindworker/go-concurrency-exercises)
 Exercises for Golang's concurrency patterns.
 
 ## Why
-The Go community has plenty resources to read about go's concurrency model and how to use it effectively. But *who actually wants to read all this*!? This repo tries to teach concurrency patterns by following the 'learning by doing' approach.
-
+Ну ниче так камкарренси и параллелизм тоже ничего.
 ![Image of excited gopher](https://golang.org/doc/gopher/pkg.png)
 
 ## How to take this challenge
@@ -14,8 +13,8 @@ The Go community has plenty resources to read about go's concurrency model and h
 ## Overview
 | # | Name of the Challenge + URL           | 
 | - |:-------------|
-| 0 | [Limit your Crawler](https://github.com/mindworker/go-concurrency-exercises/tree/master/0-limit-crawler) |
-| 1 | [Producer-Consumer](https://github.com/mindworker/go-concurrency-exercises/tree/master/1-producer-consumer)  |
+| 0 | [Остуди кравлера](https://github.com/mindworker/go-concurrency-exercises/tree/master/0-limit-crawler) |
+| 1 | [Продусь-потребЛЯй](https://github.com/mindworker/go-concurrency-exercises/tree/master/1-producer-consumer)  |
 | 2 | [Race Condition in Caching Cache](https://github.com/mindworker/go-concurrency-exercises/tree/master/2-race-in-cache#race-condition-in-caching-szenario)  |
 | 3 | [Limit Service Time for Free-tier Users](https://github.com/mindworker/go-concurrency-exercises/tree/master/3-limit-service-time)  |
 | 4 | [Graceful SIGINT Killing](https://github.com/mindworker/go-concurrency-exercises/tree/master/4-graceful-sigint)  |
@@ -24,17 +23,5 @@ The Go community has plenty resources to read about go's concurrency model and h
 ## License
 
 ```
- DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
-                    Version 2, December 2004 
-
- Copyleft from 2017 Long Hoang
-
- Everyone is permitted to copy and distribute verbatim or modified 
- copies of this license document, and changing it is allowed as long 
- as the name is changed.
-
-            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
-   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
-
-  0. You just DO WHAT THE FUCK YOU WANT TO.
+ моя лицензия: [нет]
 ```
