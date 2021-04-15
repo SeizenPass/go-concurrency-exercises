@@ -19,7 +19,7 @@ import (
 // real crawler. It crawls until the maximum depth has reached.
 func Crawl(url string, depth int, wg *sync.WaitGroup, che <-chan time.Time) {
 	defer wg.Done()
-	fmt.Println("Started go routine in depth", depth)
+
 	if depth <= 0 {
 		return
 	}
